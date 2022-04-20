@@ -5,7 +5,7 @@ module "network" {
 
     network_name = "marc"
   
-      project_id = "var.project"
+      project_id = var.project
     subnets = [
     {
         subnet_name   = "gaurav-subnet"
