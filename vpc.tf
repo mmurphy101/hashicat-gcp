@@ -2,8 +2,10 @@ module "network" {
   source  = "app.terraform.io/DarkOrg/network/google"
   version = "3.4.0"
   # insert required variables here
-network_name = "marc"
-project_id = "10"
+
+    network_name = "marc"
+  
+      project_id = "var.project"
     subnets = [
     {
         subnet_name   = "gaurav-subnet"
